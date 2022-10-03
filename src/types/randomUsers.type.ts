@@ -1,4 +1,4 @@
-export interface IResult {
+export interface IRandomUser {
   gender: string ,
   name: {
     title: string 
@@ -55,8 +55,8 @@ export interface IResult {
   nat: string
 }
 
-export interface IRes {
-  results: IResult[]
+export interface IResponseRandomUsers {
+  results: IRandomUser[]
   info: {
     seed: string 
     results: number

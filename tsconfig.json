@@ -6,6 +6,8 @@
       "dom.iterable",
       "esnext"
     ],
+    "instantiationDepthLimit": 100,
+    "instantiationCountLimit": 10000000,
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
