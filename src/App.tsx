@@ -1,10 +1,19 @@
+import { Routes, Route } from 'react-router-dom'
 
-function App() {
+// ---
+
+import { AppLayout } from './layout'
+import { Home, About } from './pages'
+
+// ---
+
+export default function App() {
   return (
-    <div>
-      i am app
-    </div>
-  );
+    <AppLayout>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </AppLayout>
+  )
 }
-
-export default App;
